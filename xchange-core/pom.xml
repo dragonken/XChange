@@ -2,9 +2,9 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.xeiam.xchange</groupId>
+		<groupId>org.knowm.xchange</groupId>
 		<artifactId>xchange-parent</artifactId>
-		<version>4.0.0-SNAPSHOT</version>
+		<version>4.3.14-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>xchange-core</artifactId>
@@ -12,27 +12,18 @@
 	<name>XChange Core</name>
 	<description>Core functionality used by all other modules.</description>
 
-	<url>http://xeiam.com</url>
+	<url>http://knowm.org/open-source/xchange/</url>
 	<inceptionYear>2012</inceptionYear>
 
 	<organization>
-		<name>Xeiam, LLC</name>
-		<url>http://xeiam.com</url>
+		<name>Knowm Inc.</name>
+		<url>http://knowm.org/open-source/xchange/</url>
 	</organization>
 
 	<!-- Parent provides default configuration for dependencies -->
 	<dependencies>
 
 		<!-- Third party dependencies -->
-		<dependency>
-			<groupId>org.java-websocket</groupId>
-			<artifactId>Java-WebSocket</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-		</dependency>
 
 		<dependency>
 			<groupId>com.github.mmazi</groupId>
@@ -40,14 +31,15 @@
 		</dependency>
 
 		<dependency>
-			<groupId>net.iharder</groupId>
-			<artifactId>base64</artifactId>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+		</dependency>
+		<!--For String Joining, etc. -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
 		</dependency>
 
- 		<dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-        </dependency>
 
 	</dependencies>
 </project>
