@@ -3,9 +3,9 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.xeiam.xchange</groupId>
+		<groupId>org.knowm.xchange</groupId>
 		<artifactId>xchange-parent</artifactId>
-		<version>4.0.0-SNAPSHOT</version>
+		<version>4.3.14-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>xchange-examples</artifactId>
@@ -13,27 +13,35 @@
 	<name>XChange Examples</name>
 	<description>Provides a set of examples that demonstrate how to use XChange in client applications</description>
 
-	<url>http://xeiam.com</url>
+	<url>http://knowm.org/open-source/xchange/</url>
 	<inceptionYear>2012</inceptionYear>
 
 	<organization>
-		<name>Xeiam, LLC</name>
-		<url>http://xeiam.com</url>
+		<name>Knowm Inc.</name>
+		<url>http://knowm.org/open-source/xchange/</url>
 	</organization>
 
 	<!-- Parent provides default configuration for dependencies -->
 	<dependencies>
 
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.knowm.xchart</groupId>
+			<artifactId>xchart</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.reflections</groupId>
+			<artifactId>reflections</artifactId>
+		</dependency>
+
 		<!-- XChange dependencies -->
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>xchange-core</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<!-- XChange VirtEx exchange support -->
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>xchange-cavirtex</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<!-- XChange Open Exchange Rates exchange support -->
@@ -42,179 +50,179 @@
 			<artifactId>xchange-openexchangerates</artifactId>
 			<version>${project.version}</version>
 		</dependency>
-		<!-- XChange BTC-E exchange support -->
+		<!-- XChange Wex exchange support -->
 		<dependency>
-			<groupId>${project.groupId}</groupId> 
-			<artifactId>xchange-btce</artifactId>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-wex</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<!-- XChange Bibox exchange support -->
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-bibox</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<!-- XChange Binance exchange support -->
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-binance</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<!-- XChange Bitstamp exchange support -->
 		<dependency>
-			<groupId>${project.groupId}</groupId> 
-			<artifactId>xchange-bitcurex</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<!-- XChange BitKonan exchange support -->
-		<dependency>
-			<groupId>${project.groupId}</groupId> 
-			<artifactId>xchange-bitkonan</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<!-- XChange Bitstamp exchange support -->
-		<dependency>
-			<groupId>${project.groupId}</groupId> 
+			<groupId>${project.groupId}</groupId>
 			<artifactId>xchange-bitstamp</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<!-- XChange Bittrex exchange support -->
 		<dependency>
-			<groupId>${project.groupId}</groupId> 
+			<groupId>${project.groupId}</groupId>
 			<artifactId>xchange-bittrex</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<!-- XChange CampBX exchange support -->
 		<dependency>
-			<groupId>${project.groupId}</groupId> 
+			<groupId>${project.groupId}</groupId>
 			<artifactId>xchange-campbx</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<!-- XChange BitcoinCharts support -->
 		<dependency>
-			<groupId>${project.groupId}</groupId> 
+			<groupId>${project.groupId}</groupId>
 			<artifactId>xchange-bitcoincharts</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<!-- XChange Bitcoinde support -->
 		<dependency>
-			<groupId>${project.groupId}</groupId> 
+			<groupId>${project.groupId}</groupId>
 			<artifactId>xchange-bitcoinde</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<!-- XChange BTC China support -->
-		<dependency>
-			<groupId>${project.groupId}</groupId> 
-			<artifactId>xchange-btcchina</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<!-- XChange Blockchain support -->
 		<dependency>
-			<groupId>${project.groupId}</groupId> 
+			<groupId>${project.groupId}</groupId>
 			<artifactId>xchange-blockchain</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<!-- XChange Kraken support -->
 		<dependency>
-			<groupId>${project.groupId}</groupId> 
+			<groupId>${project.groupId}</groupId>
 			<artifactId>xchange-kraken</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<!-- XChange Kucoin support -->
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-kucoin</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<!-- XChange Bitfinex support -->
 		<dependency>
-			<groupId>${project.groupId}</groupId> 
+			<groupId>${project.groupId}</groupId>
 			<artifactId>xchange-bitfinex</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<!-- XChange Bitfmex support -->
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-bitmex</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<!-- XChange Bitcoinium support -->
 		<dependency>
-			<groupId>${project.groupId}</groupId> 
+			<groupId>${project.groupId}</groupId>
 			<artifactId>xchange-bitcoinium</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<!-- XChange Coinbase support -->
 		<dependency>
-			<groupId>${project.groupId}</groupId> 
+			<groupId>${project.groupId}</groupId>
 			<artifactId>xchange-coinbase</artifactId>
 			<version>${project.version}</version>
 		</dependency>
-		<!-- XChange Coinbase (Exchange) support -->
+		<!-- XChange Coinbene support -->
 		<dependency>
 			<groupId>${project.groupId}</groupId>
-			<artifactId>xchange-coinbaseex</artifactId>
+			<artifactId>xchange-coinbene</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<!-- XChange CoinEgg support -->
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-coinegg</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<!-- XChange GDAX support -->
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-coinbasepro</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<!-- XChange BitcoinAverage support -->
 		<dependency>
-			<groupId>${project.groupId}</groupId> 
+			<groupId>${project.groupId}</groupId>
 			<artifactId>xchange-bitcoinaverage</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<!-- XChange Cex.io exchange support -->
 		<dependency>
-			<groupId>${project.groupId}</groupId> 
+			<groupId>${project.groupId}</groupId>
 			<artifactId>xchange-cexio</artifactId>
 			<version>${project.version}</version>
 		</dependency>
-		<!-- XChange CleverCoin exchange support -->
+        <!-- Xchange Cobinhood exchange support -->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>xchange-cobinhood</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+		<!-- Xchange Coingi exchange support -->
 		<dependency>
-			<groupId>${project.groupId}</groupId> 
-			<artifactId>xchange-clevercoin</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<!-- XChange Bter exchange support -->
-		<dependency>
-			<groupId>${project.groupId}</groupId> 
-			<artifactId>xchange-bter</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<!-- XChange Coinflor exchange support -->
-		<dependency>
-			<groupId>${project.groupId}</groupId> 
-			<artifactId>xchange-coinfloor</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<!-- XChange Coinsetter exchange support -->
-		<dependency>
-			<groupId>${project.groupId}</groupId> 
-			<artifactId>xchange-coinsetter</artifactId>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-coingi</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<!-- XChange ANX exchange support -->
 		<dependency>
-			<groupId>${project.groupId}</groupId> 
+			<groupId>${project.groupId}</groupId>
 			<artifactId>xchange-anx</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<!-- XChange ItBit exchange support -->
 		<dependency>
-			<groupId>${project.groupId}</groupId> 
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-huobi</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<!-- XChange ItBit exchange support -->
+		<dependency>
+			<groupId>${project.groupId}</groupId>
 			<artifactId>xchange-itbit</artifactId>
 			<version>${project.version}</version>
 		</dependency>
-        <!-- XChange IndependentReserve exchange support -->
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>xchange-independentreserve</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+		<!-- XChange IndependentReserve exchange support -->
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-independentreserve</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 		<!-- XChange LakeBTC exchange support -->
 		<dependency>
-			<groupId>${project.groupId}</groupId> 
+			<groupId>${project.groupId}</groupId>
 			<artifactId>xchange-lakebtc</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<!-- XChange Loyalbit exchange support -->
-		<dependency>
-			<groupId>${project.groupId}</groupId> 
-			<artifactId>xchange-loyalbit</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<!-- XChange Cryptsy exchange support -->
-		<dependency>
-			<groupId>${project.groupId}</groupId> 
-			<artifactId>xchange-cryptsy</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<!-- XChange Hitbtc exchange support -->
 		<dependency>
-			<groupId>${project.groupId}</groupId> 
+			<groupId>${project.groupId}</groupId>
 			<artifactId>xchange-hitbtc</artifactId>
 			<version>${project.version}</version>
 		</dependency>
-               
-		<!-- XChange BTCCentral exchange support -->
+
+		<!-- XChange Paymium exchange support -->
 		<dependency>
-			<groupId>${project.groupId}</groupId> 
-			<artifactId>xchange-btccentral</artifactId>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-paymium</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<!-- XChange BTCTrade exchange support -->
@@ -253,50 +261,21 @@
 			<artifactId>xchange-mercadobitcoin</artifactId>
 			<version>${project.version}</version>
 		</dependency>
-        <!-- XChange Bitbay exchange support -->
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>xchange-bitbay</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <!-- XChange Bitso exchange support -->
-        <dependency>
-            <groupId>${project.groupId}</groupId> 
-            <artifactId>xchange-bitso</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-		<!-- XChange Yacuna exchange support -->
+		<!-- XChange Bitbay exchange support -->
 		<dependency>
 			<groupId>${project.groupId}</groupId>
-			<artifactId>xchange-yacuna</artifactId>
+			<artifactId>xchange-bitbay</artifactId>
 			<version>${project.version}</version>
 		</dependency>
-		<!-- XChange BTC38 exchange support -->
+		<!-- XChange Bitso exchange support -->
 		<dependency>
 			<groupId>${project.groupId}</groupId>
-			<artifactId>xchange-btc38</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<!-- XChange Jubi exchange support -->
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>xchange-jubi</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<!-- XChange Taurus exchange support -->
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>xchange-taurus</artifactId>
+			<artifactId>xchange-bitso</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
 			<artifactId>xchange-quoine</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>xchange-cointrader</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
@@ -326,16 +305,6 @@
 		</dependency>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
-			<artifactId>xchange-huobi</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>${project.groupId}</groupId>
-			<artifactId>xchange-mexbt</artifactId>
-			<version>${project.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>${project.groupId}</groupId>
 			<artifactId>xchange-bitmarket</artifactId>
 			<version>${project.version}</version>
 		</dependency>
@@ -346,7 +315,12 @@
 		</dependency>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
-			<artifactId>xchange-empoex</artifactId>
+			<artifactId>xchange-coinone</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-upbit</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
@@ -354,42 +328,100 @@
 			<artifactId>xchange-vircurex</artifactId>
 			<version>${project.version}</version>
 		</dependency>
-
 		<dependency>
-			<groupId>ch.qos.logback</groupId>
-			<artifactId>logback-classic</artifactId>
-			<scope>runtime</scope>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-ccex</artifactId>
+			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.slf4j</groupId>
-			<artifactId>jul-to-slf4j</artifactId>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-livecoin</artifactId>
+			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.xeiam.xchart</groupId>
-			<artifactId>xchart</artifactId>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-yobit</artifactId>
+			<version>${project.version}</version>
 		</dependency>
-
-		<!-- JSR 356: Java API for WebSocket - Reference Implementation -->
+		<!-- XChange DSX support -->
 		<dependency>
-			<groupId>org.glassfish.tyrus</groupId>
-			<artifactId>tyrus-container-grizzly-client</artifactId>
-			<version>1.10</version>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-dsx</artifactId>
+			<version>${project.version}</version>
 		</dependency>
-
-		<!-- JSR 353: Java API for JSON Processing - Reference Implementation -->
+		<!-- XChange Abucoins exchange support -->
 		<dependency>
-			<groupId>org.glassfish</groupId>
-			<artifactId>javax.json</artifactId>
-			<version>1.0.4</version>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-abucoins</artifactId>
+			<version>${project.version}</version>
 		</dependency>
-
-		<!-- Reflections - java runtime metadata analysis -->
+		<!-- XChange Cryptopia exchange support -->
 		<dependency>
-			<groupId>org.reflections</groupId>
-			<artifactId>reflections</artifactId>
-			<version>0.9.10</version>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-cryptopia</artifactId>
+			<version>${project.version}</version>
 		</dependency>
-
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-btcturk</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-paribu</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-liqui</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-koineks</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-kucoin</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-gateio</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-koinim</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-acx</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-bitflyer</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-bitz</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-zaif</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<!-- XChange Coindirect exchange support -->
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>xchange-coindirect</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 	</dependencies>
 
 </project>
